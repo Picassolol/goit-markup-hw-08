@@ -646,18 +646,22 @@ img {
   }
   .icon-antenna::before {
     min-width: 320px;
+    width: 450px;
     min-height: 120px;
   }
   .icon-clock::before {
     min-width: 320px;
+    width: 450px;
     min-height: 120px;
   }
   .icon-diagram::before {
     min-width: 320px;
+    width: 450px;
     min-height: 120px;
   }
   .icon-astronaut::before {
     min-width: 320px;
+    width: 450px;
     min-height: 120px;
   }
 }
