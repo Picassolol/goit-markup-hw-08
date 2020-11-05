@@ -1,0 +1,202 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 500ms linear;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  background-color: $main-white;
+  padding: 40px;
+}
+
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: $main-white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  outline: none;
+}
+
+.icon-button-close {
+  fill: $title-colour;
+  width: 11px;
+  height: 11px;
+  transition: all 250ms;
+
+  &:hover,
+  &:focus {
+    fill: $accent-colour;
+  }
+
+  .close-button:hover & {
+    fill: $accent-colour;
+  }
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+
+  &-field-wrapper {
+    display: block;
+    position: relative;
+    margin-top: 4px;
+  }
+
+  &-field {
+    margin-bottom: 20px;
+    font-family: $main-font;
+    font-style: 400;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: $description-colour;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &-input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+
+    &:focus {
+      border: 1px solid $accent-colour;
+      box-sizing: border-box;
+      border-radius: 4px;
+      outline: none;
+    }
+  }
+
+  &-message {
+    display: block;
+    resize: none;
+    height: 120px;
+    width: 448px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-top: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    &:focus {
+      border: 1px solid $accent-colour;
+      box-sizing: border-box;
+      border-radius: 4px;
+      outline: none;
+    }
+
+    &::placeholder {
+      font-family: $main-font;
+      font-style: 400;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+    }
+  }
+
+  &-title {
+    font-family: $main-font;
+    font-style: 400;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $title-colour;
+    margin-bottom: 12px;
+  }
+
+  &-btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $main-white;
+    min-width: 200px;
+    height: 50px;
+    background: $accent-colour;
+    border-radius: 4px;
+    border-color: $accent-colour;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      outline: none;
+    }
+  }
+
+  &-svg-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+
+    .modal-form-input:focus + & {
+      fill: $accent-colour;
+    }
+  }
+
+  &-policy-label {
+    font-family: $main-font;
+    font-style: 400;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $description-colour;
+    margin-top: 20px;
+
+    .modal-form-check-box:checked + &:before {
+      background-color: $accent-colour;
+      background-image: url(../images/modal-form/Check.png);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &::before {
+      display: inline-block;
+      content: "";
+      width: 16px;
+      height: 15px;
+      outline: 1px solid #000;
+      margin-right: 8px;
+    }
+  }
+
+  &-check-box {
+    width: 16px;
+    height: 15px;
+  }
+}
