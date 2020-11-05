@@ -50,7 +50,7 @@ img {
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    margin: 0auto;
+    margin: 0 auto;
   }
 }
 
