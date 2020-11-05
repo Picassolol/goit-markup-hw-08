@@ -477,7 +477,7 @@ img {
 .hero {
   display: flex;
   justify-content: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero/bg-img.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/bg-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #c4c4c4;
