@@ -484,7 +484,6 @@ img {
 
 .hero-title {
   font-weight: 900;
-  font-size: 26px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
@@ -522,7 +521,7 @@ img {
     padding-bottom: 118px;
   }
   .hero-title {
-    line-height: 42px;
+    font-size: 26px;
   }
 }
 
