@@ -66,10 +66,6 @@ img {
     display: flex;
     align-items: baseline;
   }
-  .about-us .container {
-    display: flex;
-    justify-content: center;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -119,9 +115,6 @@ img {
 .social-list {
   display: flex;
   justify-content: space-around;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 30px;
 }
 
 .social-list-link {
@@ -171,6 +164,14 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .social-list {
+    padding-left: 122px;
+    padding-right: 122px;
+    padding-bottom: 24px;
+  }
 }
 
 .portfolio-main {

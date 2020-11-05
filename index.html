@@ -108,13 +108,16 @@
           <ul class="about-us-bottom-list">
             <li class="about-us-bottom-list-item list">
               <div class="about-us-img-overlay">
-                <img
-                  class="about-us-bottom-img"
-                  src="./images/main-section-about-us/img.jpg"
-                  alt="мужчина печатает на клавиатуре в окружении девайсов"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source 
+                  srcset="./images/main-section-about-us/apps-desktop.jpg 1x, ./images/main-section-about-us/apps-desktop@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  >
+                  <img class="about-us-bottom-img" src="./images/main-section-about-us/apps-desktop.jpg"
+                    alt="мужчина печатает на клавиатуре в окружении девайсов" width="370" height="294" />
+
+                </picture>
+                
                 <div class="about-us-overlay">
                   <p class="about-us-overlay-description">Десктопные приложения</p>
                 </div>
@@ -122,13 +125,16 @@
             </li>
             <li class="about-us-bottom-list-item list">
               <div class="about-us-img-overlay">
-                <img
-                  class="about-us-bottom-img"
-                  src="./images/main-section-about-us/img-1.jpg"
-                  alt="девушка держит смартфон перед ноутбуком"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="./images/main-section-about-us/mobile-apps-desctop.jpg 1x, ./images/main-section-about-us/mobile-apps-desctop@2x.jpg 2x"
+                    media="(min-width: 1200px)">
+
+                  <img class="about-us-bottom-img" src="./images/main-section-about-us/mobile-apps-desctop.jpg"
+                    alt="девушка держит смартфон перед ноутбуком" width="370" height="294" />
+                
+                </picture>
+                
                 <div class="about-us-overlay">
                   <p class="about-us-overlay-description">Мобильные приложения</p>
                 </div>
@@ -136,13 +142,16 @@
             </li>
             <li class="about-us-bottom-list-item list">
               <div class="about-us-img-overlay">
-                <img
-                  class="about-us-bottom-img"
-                  src="./images/main-section-about-us/img-2.jpg"
-                  alt="выполняется действие на планшете"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="./images/main-section-about-us/design-desktop.jpg 1x, ./images/main-section-about-us/design-desktop@2x.jpg 2x"
+                    media="(min-width: 1200px)">
+                
+                  <img class="about-us-bottom-img" src="./images/main-section-about-us/design-desktop.jpg" alt="выполняется действие на планшете"
+                    width="370" height="294" />
+                
+                </picture>
+                
                 <div class="about-us-overlay">
                   <p class="about-us-overlay-description">Дизайнерские решения</p>
                 </div>
@@ -154,17 +163,16 @@
 
       <!--our-team-->
 
-      <!-- <section class="our-team">
+      <section class="our-team">
         <div class="container">
           <h2 class="our-team-title">Наша команда</h2>
           <ul class="our-team-list list">
             <li class="our-team-list-item">
               <img
-                class="our-team-lit-img"
+                class="our-team-list-img"
                 src="./images/our-team/igor.jpg"
                 alt="Игорь Демьяненко"
-                width="270"
-                height="260"
+                
               />
               <div class="card-content">
                 <h3 class="our-team-list-name">Игорь Демьяненко</h3>
@@ -203,11 +211,10 @@
             </li>
             <li class="our-team-list-item">
               <img
-                class="our-team-lit-img"
+                class="our-team-list-img"
                 src="./images/our-team/olga.jpg"
                 alt="Ольга Репина"
-                width="270"
-                height="260"
+                
               />
               <div class="card-content">
                 <h3 class="our-team-list-name">Ольга Репина</h3>
@@ -246,11 +253,10 @@
             </li>
             <li class="our-team-list-item">
               <img
-                class="our-team-lit-img"
+                class="our-team-list-img"
                 src="./images/our-team/nikolay.jpg"
                 alt="Николай Тарасов"
-                width="270"
-                height="260"
+                
               />
               <div class="card-content">
                 <h3 class="our-team-list-name">Николай Тарасов</h3>
@@ -289,11 +295,10 @@
             </li>
             <li class="our-team-list-item">
               <img
-                class="our-team-lit-img"
+                class="our-team-list-img"
                 src="./images/our-team/michael.jpg"
                 alt="Михаил Ермаков"
-                width="270"
-                height="260"
+                
               />
               <div class="card-content">
                 <h3 class="our-team-list-name">Михаил Ермаков</h3>
@@ -332,7 +337,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- clients list -->
 

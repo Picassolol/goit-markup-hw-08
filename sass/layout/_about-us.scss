@@ -1,4 +1,7 @@
 .about-us {
+  display: flex;
+  justify-content: center;
+
   &-title {
     margin-bottom: 10px;
     font-weight: 700;
@@ -23,86 +26,14 @@
   .about-us {
     padding-bottom: 60px;
     padding-top: 60px;
+  }
+}
 
+@media screen and (max-width: 1199px) {
+  .about-us {
     &-second {
       display: none;
     }
-  }
-}
-
-/* mobile */
-
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .about-us {
-    &-list {
-      &-item:not(:last-child) {
-        padding-bottom: 30px;
-      }
-    }
-  }
-
-  .icon-antenna::before {
-    min-width: 320px;
-    width: 450px;
-    min-height: 120px;
-  }
-
-  .icon-clock::before {
-    min-width: 320px;
-    width: 450px;
-    min-height: 120px;
-  }
-
-  .icon-diagram::before {
-    min-width: 320px;
-    width: 450px;
-    min-height: 120px;
-  }
-
-  .icon-astronaut::before {
-    min-width: 320px;
-    width: 450px;
-    min-height: 120px;
-  }
-}
-
-/* tablet */
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .about-us {
-    &-list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-
-      &-item {
-        width: 354px;
-        height: 251px;
-      }
-
-      &-item:not(:nth-last-child(-n + 2)) {
-        margin-bottom: 30px;
-      }
-    }
-  }
-  .icon-antenna::before {
-    width: 354px;
-    height: 120px;
-  }
-
-  .icon-clock::before {
-    width: 354px;
-    height: 120px;
-  }
-
-  .icon-diagram::before {
-    width: 354px;
-    height: 120px;
-  }
-
-  .icon-astronaut::before {
-    width: 354px;
-    height: 120px;
   }
 }
 
@@ -148,6 +79,171 @@
   background-image: url(../images/main-section-about-us/astronaut.png);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+/* mobile */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .about-us {
+    &-list {
+      &-item:not(:last-child) {
+        padding-bottom: 30px;
+      }
+    }
+  }
+
+  .icon-antenna::before {
+    min-width: 320px;
+    max-width: 450px;
+    min-height: 120px;
+  }
+
+  .icon-clock::before {
+    min-width: 320px;
+    max-width: 450px;
+    min-height: 120px;
+  }
+
+  .icon-diagram::before {
+    min-width: 320px;
+    max-width: 450px;
+    min-height: 120px;
+  }
+
+  .icon-astronaut::before {
+    min-width: 320px;
+    max-width: 450px;
+    min-height: 120px;
+  }
+}
+
+/* tablet */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .about-us {
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      &-item {
+        width: 354px;
+        height: 251px;
+      }
+
+      &-item:not(:nth-last-child(-n + 2)) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .icon-antenna::before {
+    width: 354px;
+    height: 120px;
+  }
+
+  .icon-clock::before {
+    width: 354px;
+    height: 120px;
+  }
+
+  .icon-diagram::before {
+    width: 354px;
+    height: 120px;
+  }
+
+  .icon-astronaut::before {
+    width: 354px;
+    height: 120px;
+  }
+}
+
+/* desktop */
+
+@media screen and (min-width: 1200px) {
+  .about-us {
+    padding-bottom: 94px;
+    padding-top: 94px;
+
+    &-list {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-second {
+      display: flex;
+      justify-content: center;
+    }
+
+    &-bottom-title {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.167;
+      text-align: center;
+      letter-spacing: 0.03em;
+      color: $title-colour;
+      margin-bottom: 50px;
+    }
+
+    &-bottom-list {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-list-item:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    &-list-item:not(:last-child) {
+      margin-right: 30px;
+    }
+
+    &-overlay {
+      position: absolute;
+      width: 370px;
+      height: 70px;
+      bottom: 0;
+      left: 0;
+      background: rgba(47, 48, 58, 0.8);
+
+      &-description {
+        font-family: $main-font;
+        font-style: 400;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $main-white;
+        padding-top: 27px;
+        padding-bottom: 27px;
+      }
+    }
+
+    &-img-overlay {
+      position: relative;
+    }
+  }
+
+  .icon-antenna::before {
+    width: 270px;
+    height: 120px;
+  }
+
+  .icon-clock::before {
+    width: 270px;
+    height: 120px;
+  }
+
+  .icon-diagram::before {
+    width: 270px;
+    height: 120px;
+  }
+
+  .icon-astronaut::before {
+    width: 270px;
+    height: 120px;
+  }
 }
 
 /* .about-us {
