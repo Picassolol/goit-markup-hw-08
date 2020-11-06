@@ -59,3 +59,19 @@
     padding-bottom: 24px;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .social-list {
+    padding-left: 74px;
+    padding-right: 74px;
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social-list {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 30px;
+  }
+}

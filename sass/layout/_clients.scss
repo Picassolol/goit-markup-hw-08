@@ -1,13 +1,4 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
-  &-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
   &-icon {
     fill: $icon-colour;
     width: 88px;
@@ -24,8 +15,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
-    height: 90px;
     border: 1px solid $icon-colour;
     box-sizing: border-box;
     border-radius: 4px;
@@ -42,11 +31,90 @@
     font-weight: 700;
     font-family: $main-font;
     font-style: normal;
-    font-size: 36px;
-    line-height: 1.167;
     text-align: center;
     letter-spacing: 0.03em;
     color: $title-colour;
     margin-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .clients {
+    &-title {
+      font-size: 28px;
+      line-height: 1.17;
+    }
+  }
+}
+
+/* mobile */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      &-item:not(:nth-last-child(-n + 2)) {
+        margin-bottom: 30px;
+      }
+    }
+
+    &-link {
+      width: 210px;
+      height: 90px;
+    }
+  }
+}
+
+/* tablet */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      &-item:not(:nth-last-child(-n + 3)) {
+        margin-bottom: 30px;
+      }
+    }
+
+    &-link {
+      width: 226px;
+      height: 90px;
+    }
+  }
+}
+
+/* desktop */
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &-link {
+      width: 170px;
+      height: 90px;
+    }
+
+    &-title {
+      font-size: 36px;
+      line-height: 1.16;
+    }
   }
 }
