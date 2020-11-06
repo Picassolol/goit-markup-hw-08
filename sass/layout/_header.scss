@@ -1,10 +1,7 @@
 .header {
-  padding: 25px;
-  border-bottom: 1px solid $secondary-white;
+  position: relative;
 
-  .address {
-    margin-left: auto;
-  }
+  border-bottom: 1px solid $secondary-white;
 
   &-tel-link,
   &-mail-link {
@@ -55,14 +52,6 @@
   }
 }
 
-.adress-list {
-  display: flex;
-
-  &-item:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-
 .navigation {
   display: flex;
   align-items: center;
@@ -89,6 +78,36 @@
       }
     }
   }
+
+  &-menu {
+    &-button {
+      width: 40px;
+      height: 40px;
+      background-color: transparent;
+      outline: none;
+      border: none;
+    }
+
+    &.is-open {
+      display: block;
+    }
+  }
+
+  &-icon {
+    &-cross {
+      display: none;
+
+      .navigation-menu-button.is-open & {
+        display: block;
+      }
+    }
+
+    &-menu {
+      .navigation-menu-button.is-open & {
+        display: none;
+      }
+    }
+  }
 }
 
 .streampage {
@@ -104,5 +123,79 @@
     width: 100%;
     background-color: $accent-colour;
     border-radius: 4px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    padding: 25px;
+  }
+
+  .address {
+    margin-left: 305px;
+  }
+
+  .navigation {
+    &-menu {
+      display: flex;
+      align-items: center;
+
+      &-button {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header {
+    display: flex;
+    padding: 25px;
+  }
+
+  .adress-list {
+    display: flex;
+
+    &-item:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  .navigation {
+    &-menu {
+      &-button {
+        display: none;
+      }
+    }
+  }
+
+  .navigation-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+
+    &-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: red;
+      padding: 20px;
+      text-align: center;
+      font-size: 20px;
+    }
   }
 }
