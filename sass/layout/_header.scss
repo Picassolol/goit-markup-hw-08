@@ -55,6 +55,7 @@
 .navigation {
   display: flex;
   align-items: center;
+  width: 100%;
 
   &-list {
     display: flex;
@@ -126,14 +127,24 @@
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .streampage {
+    &::after {
+      bottom: -36px;
+    }
+  }
+}
+
 @media screen and (min-width: 768px) {
-  .header {
+  .navigation-menu {
     display: flex;
-    padding: 25px;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
   }
 
-  .address {
-    margin-left: 305px;
+  .header {
+    padding: 25px;
   }
 
   .navigation {
@@ -149,14 +160,19 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .header {
+  .navigation-menu {
     display: flex;
-    padding: 25px;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
   }
 
   .adress-list {
     display: flex;
+    align-items: center;
+  }
 
+  .adress-list {
     &-item:not(:last-child) {
       margin-right: 30px;
     }
