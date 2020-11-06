@@ -2,6 +2,9 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $secondary-background-clour;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 
   & .social-list-svg {
     fill: $main-white;
@@ -21,11 +24,31 @@
 
   & .logo {
     color: $main-white;
+    //----------------
+    margin-right: 0;
+  }
+  & .social-list-container {
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 93px;
+    }
   }
 }
 
 .contacts {
   background-color: $secondary-background-clour;
+  //----------------------
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 
   &-list {
     margin-top: 20px;
@@ -53,8 +76,4 @@
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .contacts {
-    text-align: center;
-  }
-}
+//-------------------

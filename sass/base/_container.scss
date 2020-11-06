@@ -20,7 +20,9 @@
 
     .footer & {
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
+      align-items: baseline;
     }
   }
 }
@@ -37,6 +39,7 @@
     .footer & {
       display: flex;
       align-items: baseline;
+      justify-content: flex-start;
     }
   }
 }

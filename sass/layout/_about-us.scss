@@ -93,25 +93,45 @@
   }
 
   .icon-antenna::before {
-    min-width: 320px;
+    //--------------------------
+    @media screen and (max-width: 479px) {
+      width: 100%;
+    }
+    //min-width: 320px;
+    //--------------------------
     max-width: 450px;
     min-height: 120px;
   }
 
   .icon-clock::before {
-    min-width: 320px;
+    //--------------------------
+    @media screen and (max-width: 479px) {
+      width: 100%;
+    }
+    //min-width: 320px;
+    //--------------------------
     max-width: 450px;
     min-height: 120px;
   }
 
   .icon-diagram::before {
-    min-width: 320px;
+    //--------------------------
+    @media screen and (max-width: 479px) {
+      width: 100%;
+    }
+    //min-width: 320px;
+    //--------------------------
     max-width: 450px;
     min-height: 120px;
   }
 
   .icon-astronaut::before {
-    min-width: 320px;
+    //-------------------------
+    @media screen and (max-width: 479px) {
+      width: 100%;
+    }
+    //min-width: 320px;
+    //--------------------------
     max-width: 450px;
     min-height: 120px;
   }
