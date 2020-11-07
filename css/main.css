@@ -511,6 +511,18 @@ img {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-tel-link, .header-mail-link {
+    font-size: 12px;
+    line-height: 1.166;
+  }
+  .header-tel-link-svg {
+    width: 10px;
+    height: 14px;
+  }
+  .header-mail-link-svg {
+    width: 14px;
+    height: 10px;
+  }
   .streampage::after {
     bottom: -22px;
   }
