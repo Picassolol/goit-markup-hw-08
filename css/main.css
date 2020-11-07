@@ -276,6 +276,7 @@ img {
   letter-spacing: 0.03em;
   color: #757575;
   margin-top: 20px;
+  margin-bottom: 5px;
 }
 
 .modal-form-check-box:checked + .modal-form-policy-label:before {

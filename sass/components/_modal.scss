@@ -176,6 +176,7 @@
     letter-spacing: 0.03em;
     color: $description-colour;
     margin-top: 20px;
+    margin-bottom: 5px;
 
     .modal-form-check-box:checked + &:before {
       background-color: $accent-colour;
